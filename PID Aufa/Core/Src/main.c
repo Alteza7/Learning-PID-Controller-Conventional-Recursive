@@ -175,7 +175,7 @@ float hitungRPM(){
 	        }
 
 	        /* Time Gap */
-	        float deltaTime = (float)(currentTime - lastCount) / 1000.0f;
+	        float deltaTime = (float)(currentTime - lastTime) / 1000.0f;
 
 	        /* RPM Convert */
 	        rpm = (float)(deltaPulse * 60.0f) / (PPR * deltaTime);
